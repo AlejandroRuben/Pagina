@@ -1,0 +1,27 @@
+/*
+1. Posicionamiento
+2. Modelo caja (Box model)
+3. Tipografia
+4. Temas visuales
+5. Otros
+*/
+:root{
+    /*COLORES*/
+ --iconnav-letters:#697477;
+ --fondo-sectionuno-footer:#eff3f5;
+ --titulos: #2a3b47;
+ --fondo-sectiondos:#fcfcfc;
+ --fondo-sectiontres:#fbfbfe;
+ --letter-carrito-blue:#1192ee;
+ --fondo-lanzamiento:#e7f4fd;
+ --fondo-docente:#f7f7f7;
+ --carritos-amarillo:#ffbc4c;
+ --estrella:#ffba42;
+ --fondo-rojo:#fdeded;
+ --curso-gratis:#eb5656;
+ --taller-verde:#2dd280;
+ --fondo-taller:#eafbf2;
+ --especialidad:#ffba42;
+ --fondo-especialidad:#fff8eb;
+ --preguntas:#007bdf;
+}

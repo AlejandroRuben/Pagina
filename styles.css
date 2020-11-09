@@ -8,7 +8,7 @@
 :root{
     /*COLORES*/
  --iconnav-letters:#697477;
- --fondo-sectionuno-footer:#eff3f5;
+ --fondo-masvistos-footer:#eff3f5;
  --titulos: #2a3b47;
  --fondo-sectiondos:#fcfcfc;
  --fondo-sectiontres:#fbfbfe;
@@ -63,7 +63,7 @@ display: flex;
 .header__masvistos{
     width: 100%;
     height: calc(100% - 50px);
-    background-color: var(--fondo-sectionuno-footer);
+    background-color: var(--fondo-masvistos-footer);
 }
 .header__masvistos p{
     font-size: 2rem;
@@ -86,4 +86,77 @@ display: flex;
 }
 .rotate{
    transform: rotate(90deg);
+}
+.main__sectionuno{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background:  grey;
+}
+
+.main__sectionuno--button1{
+    display: flex;
+    align-items: center;
+    width: 180px;    
+    height: 40px;
+    background:  var(--letter-carrito-blue);
+    position: relative;
+}
+.main__sectionuno--button1 img{
+    width: 35px;
+    margin-left: 10px;
+}
+.main__sectionuno--button1 a span{
+    width: 13rem;
+    height: 2rem;
+    position: absolute;
+    order:1;
+    top: 16px;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    background-image: url('./assets/icons/down-arrow.svg');
+}
+.main__sectionuno--buttons{
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;   
+}
+.main__sectionuno--button2{
+    position: relative;
+}
+.main__sectionuno--button2 img{
+    width: 18px;
+    position: absolute;
+    bottom: 29%;
+    left: 1.5rem;
+    order: 1;
+}
+.main__sectionuno--button2 option{
+   padding: 0;
+   margin: 0;
+}
+.select {
+    padding-right:  5rem; 
+    border-radius: 5px;
+    border-color: 1px solid rgb(239, 243, 245) ;
+    order: 0;
+    padding-left: 4.5rem;
+    height: 6.3rem;
+    letter-spacing: .2px;
+    font-weight: bold;
+    font-size: 2.2rem;
+    color: var(--iconnav-letters);
+    appearance: none;
+    background-image: url('./assets/icons/chevron-downblue.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - .5rem);
+    background-size: 3.5rem;
+    outline: none;
+}
+.tag{
+    transform: rotate(180deg);
 }

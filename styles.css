@@ -94,15 +94,13 @@ display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-evenly;
-    background:  grey;
 }
 
 .main__sectionuno--button1{
     display: flex;
     align-items: center;
-    width: 180px;    
+    width: 260px;    
     height: 40px;
-    background:  var(--letter-carrito-blue);
     position: relative;
 }
 .main__sectionuno--button1 img{
@@ -142,7 +140,7 @@ display: flex;
 .select {
     padding-right:  5rem; 
     border-radius: 5px;
-    border-color: 1px solid rgb(239, 243, 245) ;
+    border: 1px solid rgb(239, 243, 245) ;
     order: 0;
     padding-left: 4.5rem;
     height: 6.3rem;

@@ -66,11 +66,11 @@ display: flex;
     background-color: var(--fondo-masvistos-footer);
 }
 .header__masvistos p{
-    font-size: 2rem;
+    font-size: 2.4rem;
     letter-spacing: 0.08rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    margin: 15px;
+    margin: 10px;
 }
 .header__scroll{
     overflow: scroll;
@@ -95,7 +95,6 @@ display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-
 .main__sectionuno--button1{
     display: flex;
     align-items: center;
@@ -146,7 +145,7 @@ display: flex;
     height: 6.3rem;
     letter-spacing: .2px;
     font-weight: bold;
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     color: var(--iconnav-letters);
     appearance: none;
     background-image: url('./assets/icons/chevron-downblue.svg');
@@ -157,4 +156,94 @@ display: flex;
 }
 .tag{
     transform: rotate(180deg);
+}
+.main__sectiondos{
+    background: var(--fondo-masvistos-footer);
+    width: 100%;
+    height: calc(100vh -210px - 80px -200px;);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    
+}
+.main__sectiondos--container{
+    width: 90%;
+    height: 330px;
+    background: var(--fondo-sectiondos);
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px 8px rgba(89, 73, 30, .16);
+    margin-bottom: 30px;
+}
+.main__sectiondos--container img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.main__sectiondos--container h2{
+    color: var(--titulos);
+    font-size: 2.3rem;
+    letter-spacing: 0.08rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    padding: 10px;
+}
+.main__sectiondos--container p{
+    padding: 0 10px;
+    padding-bottom: 15px;
+    font-size: 2rem;
+}
+.main__estadouno{
+    width: 160px;
+    height: 20px;
+    background: var(--fondo-lanzamiento);
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.main__estadouno img{
+    width: 12px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+.main__estadouno span{
+    font-size: 2rem;
+    color: var(--letter-carrito-blue);
+}
+.main__docente{
+    width: 100%;
+    height: 45px;
+    background: var(--fondo-docente) ;
+    padding-top:0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 15px 15px;
+    margin-top: 10px;
+}
+.main__docente--der{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.main__docente--der img{
+    width: 30px;
+    border-radius: 30px;
+    
+}
+.main__docente--der span{
+    font-size: 1.8rem;
+    color: var(--iconnav-letters);
+    margin-left: 5px;
+}
+.main__docente--izq{
+    display: flex;
+    align-items: center;
+}
+.main__docente--izq img{
+    width: 30px;
+    border-radius: 30px;
+}
+.main__docente--izq span{
+    color: var(--carritos-amarillo);
+    font-size: 1.8rem;
+    margin-right: 15px;
 }

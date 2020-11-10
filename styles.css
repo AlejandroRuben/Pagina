@@ -11,7 +11,7 @@
  --fondo-masvistos-footer:#eff3f5;
  --titulos: #2a3b47;
  --fondo-sectiondos:#fcfcfc;
- --fondo-sectiontres:#fbfbfe;
+ --fondo-main:#fbfbfe;
  --letter-carrito-blue:#1192ee;
  --fondo-lanzamiento:#e7f4fd;
  --fondo-docente:#f7f7f7;
@@ -23,6 +23,7 @@
  --fondo-taller:#eafbf2;
  --fondo-especialidad:#fff8eb;
  --preguntas:#007bdf;
+ --color-rrss:#515151;
 }
 *{ box-sizing: border-box;
     margin: 0;
@@ -32,17 +33,18 @@ html{
     font-size: 41.68%;
     font-family: 'Open Sans', sans-serif;
 }
+
 header{
  position: relative;
  display: flex;
  flex-direction: column;
  width: 100%;
  min-width: 320px;
- height: 210px;
+ height: 50px;
+ padding-top: 3px;
 }
 .header__nav{
 width: 100%;
-height: 50px;
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -59,26 +61,29 @@ display: flex;
     width: 30px;
     margin: 6px;
 }
-.header__masvistos{
+
+.main__masvistos{
     width: 100%;
     height: calc(100% - 50px);
     background-color: var(--fondo-masvistos-footer);
+    height: 150px;
+    padding-top: 2px;
 }
-.header__masvistos p{
+.main__masvistos p{
     font-size: 2.4rem;
     letter-spacing: 0.08rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     margin: 10px;
 }
-.header__scroll{
+.main__scroll{
     overflow: scroll;
     width: 100%;
     display: flex;
     flex-direction: row;
     
 } 
-.header__scroll img{
+.main__scroll img{
     width: 150px;
     border-radius: 10px;
     margin: 0px 8px;
@@ -103,7 +108,7 @@ display: flex;
 }
 .main__sectionuno--button1 img{
     width: 35px;
-    margin-left: 10px;
+    margin-left: 10px;  
 }
 .main__sectionuno--button1 a span{
     width: 13rem;
@@ -130,6 +135,7 @@ display: flex;
     bottom: 29%;
     left: 1.5rem;
     order: 1;
+ 
 }
 .main__sectionuno--button2 option{
    padding: 0;
@@ -157,7 +163,7 @@ display: flex;
     transform: rotate(180deg);
 }
 .main__sectiondos{
-    background: var(--fondo-masvistos-footer);
+    background: var(--fondo-main);
     width: 100%;
     height: calc(100vh -210px - 80px -200px);
     display: flex;
@@ -345,3 +351,60 @@ display: flex;
     margin-right: 15px;
 }
 
+footer{
+width: 100%;
+height: calc(100% - 50px);
+background: var(--fondo-masvistos-footer);
+padding: 10px;
+}
+.equipo{
+width: 100%;
+height: auto;
+}
+.equipo__container{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.equipo__container h2{
+    font-size: 2rem;
+    letter-spacing: 0.08rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.equipo__container--logo{
+    display: grid;
+    grid-template-columns: 10% 85%;
+}
+.equipo__container--logo img{
+ width: 20px;
+}
+
+.equipo__container--paises p{ 
+ font-size: 1.5rem;
+ padding-bottom: 2px;
+ border-left: 2px solid var(--iconnav-letters);
+ padding-left: 15px;
+ color: var(--iconnav-letters);
+}
+.rrss{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+.rrss img{
+    width:20px;
+    object-fit: contain;/*para mantener proporcion*/
+    margin: 0 10px;
+}
+.equipo__container--paises a{
+    font-size: 1.5rem;
+    display: block;
+    padding-bottom: 2px;
+    text-decoration: none;
+    border-left: 2px solid var(--iconnav-letters);
+    padding-left: 15px;
+    color: var(--iconnav-letters);
+}

@@ -14,7 +14,7 @@
  --fondo-main:#fbfbfe;
  --letter-carrito-blue:#1192ee;
  --fondo-lanzamiento:#e7f4fd;
- --fondo-docente:#f7f7f7;
+ --fondo-docente:rgb(247, 247, 247);
  --carritos-amarillo:#ffbc4c;
  --estrella-especialidad:#ffba42;
  --fondo-rojo:#fdeded;
@@ -61,6 +61,91 @@ display: flex;
     width: 30px;
     margin: 6px;
 }
+.menu{
+    position: fixed;
+    background: rgba(247, 247, 247);
+    z-index: 3;
+    top: 50px;
+    right: -100vw;
+    width: 90vw;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    transition: .3s;
+}
+.menu.is-active{
+    right: 0;
+}
+.menu__cursos{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.menu__cursos span{
+    position: absolute;
+    top: 1.5rem;
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: var(--titulos);
+    padding-left: 7.5rem;
+}
+.menu__cursos img{
+    position: absolute;
+    width: 3rem;
+    object-fit: contain;
+    margin-left: 3rem;
+}
+
+.menu__select{
+        width: 100%;
+        border: 1px solid #eeeeee;
+        border-left: none;
+        border-right: none;
+        height: 6.3rem;
+        background: rgba(247, 247, 247);
+        background-image: url('./assets/icons/chevron-down_gray.svg');
+        background-repeat: no-repeat;
+        background-position: calc(100% - 2rem);
+        background-size: 3.5rem;
+        outline: none;
+        color:rgba(247, 247, 247);
+        padding-left: 6.7rem;
+ }
+
+.menu__select option{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--iconnav-letters);
+    font-size: 2.2rem;
+    letter-spacing: 0.5rem;
+    font-weight: bolder;
+}
+.menu__button{
+    display: flex;
+    align-items: center;
+    width: 100%;    
+    height: 40px;
+    position: relative;
+}
+.menu__button img{
+    width: 20px;
+    margin-left: 3rem;  
+}
+.menu__button a{
+    text-decoration: none;
+}
+.menu__button span{
+    position:absolute;
+    width: 100%;
+    height: 2rem;
+    color: var(--titulos);
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: var(--titulos);
+    margin-left: 1.5rem;
+    bottom: 2.8rem;
+}
+
 
 .main__masvistos{
     width: 100%;
@@ -80,9 +165,11 @@ display: flex;
     overflow: scroll;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row; 
 } 
+.main__scroll::-webkit-scrollbar{
+    display: none;
+}
 .main__scroll img{
     width: 150px;
     border-radius: 10px;
@@ -125,6 +212,9 @@ display: flex;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 2rem;   
+}
+.main__sectionuno--buttons::-webkit-scrollbar{
+    display: none;
 }
 .main__sectionuno--button2{
     position: relative;
@@ -390,10 +480,11 @@ height: auto;
 }
 .rrss{
     width: 100%;
-    height: 40px;
+    height: 20px;
     display: flex;
     justify-content: center;
 }
+
 .rrss img{
     width:20px;
     object-fit: contain;/*para mantener proporcion*/

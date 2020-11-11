@@ -6,6 +6,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
+    
 </head>
 <body>
    
@@ -19,9 +20,53 @@
                 <img src="./assets/icons/search_grey.svg" alt="search">
                 <img src="./assets/icons/cart_grey.svg" alt="basket">
                 <img src="./assets/icons/user_grey.svg" alt="user">
-                <img class="rotate" src="./assets/icons/vertical_grey.svg" alt="hamburger">
+                <img id="burguer" class="rotate" src="./assets/icons/vertical_grey.svg" alt="hamburger">
             </div>
         </section>
+
+        <section class="menu">
+                <div class="menu__cursos">
+                    <img src="./assets/icons/cursos_grey.png" alt="">
+                    <span> Cursos</span>
+                    <select class="menu__select">
+                        <option value="premium">Premium</option>
+                        <option value="/workshops">Especialidades</option>
+                        <option value="/especialidades">Talleres</option>
+                        <option value="/proximos">Próximos cursos</option>
+                        <option value="/gratuitos">Cursos gratis</option>
+                    </select>
+                </div>   
+                
+                <div class="menu__cursos">
+                    <img src="./assets/icons/premium_grey.png" alt="">
+                    <span> Premium</span>
+                    <select class="menu__select">
+                        <option value="planes">Planes de estudio</option>
+                        <option value="regala">Regala premium</option>
+                        <option value="empresas">Empresas</option>
+                        <option value="estudiantes">Estudiantes</option>
+                    </select>
+                </div>
+
+                <div class="menu__cursos">
+                    <img src="./assets/icons/informacion_grey.png" alt="">
+                    <span> Sobre nosotros</span>
+                    <select class="menu__select">
+                        <option value="planes">Propósito</option>
+                        <option value="regala">Dicta un curso</option>
+                        <option value="empresas">Docentes</option>
+                        <option value="estudiantes">Equipo</option>
+                    </select>
+                </div>
+                <div class="menu__button">
+                    <a href=""><img src="./assets/icons/lista_grey.png" alt="">
+                    <span>Artículos</span></a>
+                 </div>
+
+         </section>
+
+           
+
     </header>
     <main>
         <section class="main__masvistos">
@@ -177,11 +222,11 @@
         </section>
 
         <section class="rrss">
-            <img src="./assets/icons/youtube-grey.png" alt="youtube">
-            <img src="./assets/icons/twitter-grey.png" alt="tweet">
-            <img src="./assets/icons/instagram-grey.png" alt="instagram">
-            <img src="./assets/icons/linkedin-grey.png" alt="inkle">
-            <img src="./assets/icons/github-grey.png" alt="github">
+            <a href=""><img src="./assets/icons/youtube-grey.png" alt="youtube"></a>
+            <a href=""><img src="./assets/icons/twitter-grey.png" alt="tweet"></a>
+            <a href=""><img src="./assets/icons/instagram-grey.png" alt="instagram"></a>
+            <a href=""><img src="./assets/icons/linkedin-grey.png" alt="inkle"></a>
+            <a href=""><img src="./assets/icons/github-grey.png" alt="github"></a>
         </section>
 
         <section class="equipo">
@@ -231,6 +276,21 @@
         </div>
         </section>
     </footer>
+    <script>
+        const menu = document.querySelector('.menu');
+        console.log(menu);
+        const burgerButton = document.querySelector('#burguer');
+        console.log(burgerButton);
+        burgerButton.addEventListener('click',hideShow);
+        function hideShow(){
+            if (menu.classList.contains('is-active')){
+                menu.classList.remove('is-active');
+            }
+            else{
+                menu.classList.add('is-active');
+            }
+        }
+    </script>
 </body>
 </html>
 <!-- font-family: 'Open Sans', sans-serif;

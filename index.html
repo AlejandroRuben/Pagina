@@ -26,47 +26,29 @@
 
         <section class="menu">
                 <div class="menu__cursos">
-                    <img src="./assets/icons/cursos_grey.png" alt="">
-                    <span> Cursos</span>
-                    <select class="menu__select">
-                        <option value="premium">Premium</option>
-                        <option value="/workshops">Especialidades</option>
-                        <option value="/especialidades">Talleres</option>
-                        <option value="/proximos">Próximos cursos</option>
-                        <option value="/gratuitos">Cursos gratis</option>
-                    </select>
-                </div>   
-                
-                <div class="menu__cursos">
-                    <img src="./assets/icons/premium_grey.png" alt="">
-                    <span> Premium</span>
-                    <select class="menu__select">
-                        <option value="planes">Planes de estudio</option>
-                        <option value="regala">Regala premium</option>
-                        <option value="empresas">Empresas</option>
-                        <option value="estudiantes">Estudiantes</option>
-                    </select>
-                </div>
-
-                <div class="menu__cursos">
-                    <img src="./assets/icons/informacion_grey.png" alt="">
-                    <span> Sobre nosotros</span>
-                    <select class="menu__select">
-                        <option value="planes">Propósito</option>
-                        <option value="regala">Dicta un curso</option>
-                        <option value="empresas">Docentes</option>
-                        <option value="estudiantes">Equipo</option>
-                    </select>
-                </div>
-                <div class="menu__button">
-                    <a href=""><img src="./assets/icons/lista_grey.png" alt="">
-                    <span>Artículos</span></a>
-                 </div>
-
+                    <ul>
+                        <div class="menu__cursos--acordeon">
+                            <li  > 
+                                <img src="./assets/icons/cursos_grey.png" alt="">
+                                <span class="menu__cursos--acordeon-li">Cursos</span>
+                            </li>
+                        </div>
+                        <div class="acordeon__false">
+                        <ul>
+                            <li><a href=""><span>Premium</span></a></li>
+                            <li><a href=""><span>Especialidades</span></a>
+                            </li>
+                            <li><a href=""><span>Talleres</span></a>
+                            </li>
+                            <li><a href=""><span>Próximos cursos</span></a>
+                            </li>
+                            <li><a href=""><span>Gratuitos</span></a>
+                            </li>
+                        </ul>
+                        </div>
+                    </ul>
+                </div>            
          </section>
-
-           
-
     </header>
     <main>
         <section class="main__masvistos">
@@ -278,9 +260,7 @@
     </footer>
     <script>
         const menu = document.querySelector('.menu');
-        console.log(menu);
         const burgerButton = document.querySelector('#burguer');
-        console.log(burgerButton);
         burgerButton.addEventListener('click',hideShow);
         function hideShow(){
             if (menu.classList.contains('is-active')){
@@ -291,6 +271,21 @@
             }
         }
     </script>
+    <script>
+        const acordeon__false = document.querySelector('.acordeon__false');
+        const acordeon = document.querySelector('.menu__cursos--acordeon-li');
+        acordeon.addEventListener('click',hideShow);
+        function hideShow(){
+            if (acordeon.classList.contains('is-click')){
+                acordeon.classList.remove('is-click');
+                acordeon__false.classList.remove('is-click');
+            }
+            else{
+                acordeon.classList.add('is-click');
+                acordeon__false.classList.add('is-click');
+            }
+        }
+    </script>  
 </body>
 </html>
 <!-- font-family: 'Open Sans', sans-serif;

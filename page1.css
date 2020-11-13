@@ -1,0 +1,130 @@
+:root{
+    /*COLORES*/
+ --iconnav-letters:#697477;
+ --fondo-masvistos-footer:#eff3f5;
+ --titulos: #2a3b47;
+ --fondo-sectiondos:#fcfcfc;
+ --fondo-main:#fbfbfe;
+ --letter-carrito-blue:#1192ee;
+ --fondo-lanzamiento:#e7f4fd;
+ --fondo-docente:rgb(247, 247, 247);
+ --carritos-amarillo:#ffbc4c;
+ --estrella-especialidad:#ffba42;
+ --fondo-rojo:#fdeded;
+ --curso-gratis:#eb5656;
+ --taller-verde:#2dd280;
+ --fondo-taller:#eafbf2;
+ --fondo-especialidad:#fff8eb;
+ --preguntas:#007bdf;
+ --color-rrss:#515151;
+}
+*{ box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 41.68%;
+    font-family: 'Open Sans', sans-serif;
+}
+/*HEADER NAV*/
+header{
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ min-width: 320px;
+ height: 50px;
+ padding-top: 3px;
+}
+.header__nav{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.header__nav--der img{
+ width: 110px;
+ margin-left: 15px;
+ margin-top: 5px;
+}
+.header__nav--izq{
+display: flex;
+}
+.header__nav--izq img{
+    width: 30px;
+    margin: 6px;
+}
+.rotate{
+    transform: rotate(90deg);
+ }
+/*HEADER NAV*/
+
+/*PUBLICIDAD*/
+.publisher{
+    background: var(--fondo-masvistos-footer);
+    width: 100%;
+    height: 740px;
+    min-width: 288px;
+    max-width: 900px;
+    text-align: center;
+    align-self: center; 
+}
+.publisher h1{
+    font-family: 'Raleway', sans-serif;
+    padding-top: 40px;
+    font-size: 5rem;
+    font-weight: bolder;
+    line-height: 6rem;
+    color: var(--just-white);
+}
+.publisher h1 span{
+     color: var(--letter-carrito-blue); 
+}
+
+.publisher p{
+    
+    margin-top: 25px;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 4.4rem;
+    color: var(--iconnav-letters);
+}
+.publisher .publisher__button{
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    left: calc(50% - 126px);
+    top: 270;
+    display: block;
+    margin-top: 20px;
+    padding: 12px;
+    width: 250px;
+    height: 48px;
+    background-color: var(--off-white);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, .16);
+    border: 1px solid var(--letter-carrito-blue); 
+    border-radius: 5px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--letter-carrito-blue); 
+}
+.publisher a img{
+    margin-top: 90px;
+    padding: 12px;
+    width: 310px;
+    border-radius: 20px;
+}
+
+.nav__button{
+    display: flex;
+    justify-content: center;
+}
+.nav__button--circle{
+    width: 15px;
+    height: 15px;
+    background: var(--iconnav-letters);
+    border-radius: 25px;
+    align-self: center;
+    margin: 0 10px;
+}
+/*PUBLICIDAD*/

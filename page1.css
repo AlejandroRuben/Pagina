@@ -142,7 +142,7 @@ display: flex;
 
 .nuevos_cursos{
     width: 100%;
-    background-color: var(--fondo-masvistos-footer);
+    background-color: var(--fondo-docente);
     padding-top: 2px;
 }
 .nuevos_cursos p{
@@ -176,10 +176,11 @@ display: flex;
     color: var(--iconnav-letters);
     height: 100px;
     background: white;
-    border: 1px solid var( --iconnav-letters);
+    border: 1px solid var(--fondo-docente);
     border-radius: 20px;
     margin-left: 5%;
     position: relative;
+    margin-bottom: 20px;
 }
 .nuevos_cursos__nav p{
     font-size: 2rem;
@@ -214,3 +215,188 @@ display: flex;
 }
 
 /*MENSAJES DE LOS ALUMNOS*/
+
+/*PREGUNTAS O AGREGAR MENSAJE*/
+.preguntas{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    background: var(--fondo-main);
+    border-top: 1px solid #eff3f5;
+    border-bottom: 1px solid #eff3f5;
+}
+.preguntas img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border: 2px solid #7d7d7d;
+    background:var(--fondo-masvistos-footer) ;
+    border-radius: 30px;
+    margin: 15px;
+}
+.preguntas p{
+    font-size: 2.4rem;
+    font-family: 'Raleway', sans-serif;
+    color: var(--iconnav-letters);
+}
+
+/*PREGUNTAS O AGREGAR MENSAJE*/
+/*HISTORIAS DE EXITO*/
+.historias{
+   font-size: 2rem;
+   font-family: 'Raleway', sans-serif;
+   margin-top: 15px;
+   background: var(--fondo-main);
+   border-top: 1px solid #eff3f5;
+border-bottom: 1px solid #eff3f5;
+}
+.historias h2{
+    padding: 20px 0px 10px 10px;
+    font-weight: 700;
+    color: var(--titulos);
+}
+
+.historias__titulo{
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--iconnav-letters);
+    line-height: 20px;
+}
+.historias__titulo a{
+    text-decoration: none;
+    color: var(--iconnav-letters);
+}
+
+.historias img{
+    margin: 0px 8px;
+    margin-top: 3px;
+    width: 55px;
+    float: left;
+}
+.historias__contenido{
+    padding: 15px 10px;
+    text-align: justify;
+    color: var(--iconnav-letters);
+}
+.historias__contenido span{
+    color: var(--letter-carrito-blue);
+}
+.historias__compuesta{
+    background: var(--titulos);
+    border-radius: 10px;
+    width: 92%;
+    margin: 0 10px;
+    height: 150px;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.historias__compuesta h2{
+    font-size: 2.2rem;
+    margin-left: -5px;
+    color: var(--fondo-main);
+}
+.historias__compuesta span{
+    color: var(--preguntas);
+}
+.historias__compuesta img{
+    width: 100px;
+    margin: 10px 5px; 
+}
+.historias__compuesta p{    
+    font-size: 1.8rem;
+    margin: 0 5px;
+    color: var(--fondo-main);
+}
+.historias__compuesta--foto{
+    position: relative;
+    
+}
+.historias__compuesta--foto img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: -10px;
+}
+
+.historias__rrss{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 0 5px;
+}
+.historias__rrss span{
+    font-size: 1.8rem;
+    color: var(--iconnav-letters);  
+}
+
+.historias__rrss img{
+    width: 20px;
+    border-radius: 30px;
+}
+/*HISTORIAS DE EXITO*/
+
+/*footer*/
+footer{
+    width: 100%;
+    height: calc(100% - 50px);
+    background: var(--fondo-masvistos-footer);
+    padding: 10px;
+    }
+    .equipo{
+    width: 100%;
+    height: auto;
+    }
+    .equipo__container{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .equipo__container h2{
+        font-size: 2rem;
+        letter-spacing: 0.08rem;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .equipo__container--logo{
+        display: grid;
+        grid-template-columns: 10% 85%;
+    }
+    .equipo__container--logo img{
+     width: 20px;
+    }
+    
+    .equipo__container--paises p{ 
+     font-size: 1.5rem;
+     padding-bottom: 2px;
+     border-left: 2px solid var(--iconnav-letters);
+     padding-left: 15px;
+     color: var(--iconnav-letters);
+    }
+    .rrss{
+        width: 100%;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .rrss img{
+        width:20px;
+        object-fit: contain;/*para mantener proporcion*/
+        margin: 0 10px;
+    }
+    .equipo__container--paises a{
+        font-size: 1.5rem;
+        display: block;
+        padding-bottom: 2px;
+        text-decoration: none;
+        border-left: 2px solid var(--iconnav-letters);
+        padding-left: 15px;
+        color: var(--iconnav-letters);
+    }
+/*footer*/

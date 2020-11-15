@@ -61,8 +61,8 @@ display: flex;
     width: 30px;
     margin: 6px;
 }
-
 /*NAVEGADOR*/
+
 /*MENU DESPLEGABLE*/
 .menu_desplegable{
     position: fixed;
@@ -166,8 +166,6 @@ display: flex;
     font-family: 'Raleway', sans-serif;
 }
 /*MENU DESPLEGABLE*/
-
-
 
 .main__masvistos{
     width: 100%;

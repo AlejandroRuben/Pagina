@@ -127,4 +127,90 @@ display: flex;
     align-self: center;
     margin: 0 10px;
 }
+
+/* .nav__button--circle.click{
+    width: 15px;
+    height: 15px;
+    background: var(--iconnav-letters);
+    border-radius: 25px;
+    align-self: center;
+    margin: 0 10px;
+} */
 /*PUBLICIDAD*/
+
+/* CLASES SCROLL*/
+
+.nuevos_cursos{
+    width: 100%;
+    background-color: var(--fondo-masvistos-footer);
+    padding-top: 2px;
+}
+.nuevos_cursos p{
+    font-size: 2.4rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.nuevos_cursos__nav{
+    overflow: scroll;
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+} 
+.nuevos_cursos__nav::-webkit-scrollbar{
+    display: none;
+}
+.nuevos_cursos__nav img{
+    width: 150px;
+    border-radius: 10px;
+    margin: 0px 8px;
+}
+/*CLASES SCROLL*/
+
+/*MENSAJES DE LOS ALUMNOS*/
+.nuevos_cursos__nav a{
+    text-decoration: none;
+    color: var(--iconnav-letters);
+    height: 100px;
+    background: white;
+    border: 1px solid var( --iconnav-letters);
+    border-radius: 20px;
+    margin-left: 5%;
+    position: relative;
+}
+.nuevos_cursos__nav p{
+    font-size: 2rem;
+    display: flex;
+    width: 180px;
+}
+.main__docente{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.main__docente img{
+    width: 30px;
+    border-radius: 30px;
+}
+.main__docente span{
+    font-size: 1.8rem;
+    color: var(--iconnav-letters);
+    
+}
+.main__docente--izq{
+    display: flex;
+    align-items: center;
+}
+.main__docente--izq img{
+    width: 20px;
+    border-radius: 30px;
+}
+
+/*MENSAJES DE LOS ALUMNOS*/

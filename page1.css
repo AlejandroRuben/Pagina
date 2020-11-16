@@ -250,7 +250,7 @@ display: flex;
    margin-top: 15px;
    background: var(--fondo-main);
    border-top: 1px solid #eff3f5;
-border-bottom: 1px solid #eff3f5;
+    border-bottom: 1px solid #eff3f5;
 }
 .historias h2{
     padding: 20px 0px 10px 10px;

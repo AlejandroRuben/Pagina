@@ -1,0 +1,398 @@
+:root{
+    /*COLORES*/
+ --iconnav-letters:#697477;
+ --fondo-masvistos-footer:#eff3f5;
+ --titulos: #2a3b47;
+ --fondo-sectiondos:#fcfcfc;
+ --fondo-main:#fbfbfe;
+ --letter-carrito-blue:#1192ee;
+ --fondo-lanzamiento:#e7f4fd;
+ --fondo-docente:rgb(247, 247, 247);
+ --carritos-amarillo:#ffbc4c;
+ --estrella-especialidad:#ffba42;
+ --fondo-rojo:#fdeded;
+ --curso-gratis:#eb5656;
+ --taller-verde:#2dd280;
+ --fondo-taller:#eafbf2;
+ --fondo-especialidad:#fff8eb;
+ --preguntas:#007bdf;
+ --color-rrss:#515151;
+}
+*{ box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 41.68%;
+    font-family: 'Open Sans', sans-serif;
+}
+/*HEADER NAV*/
+header{
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ min-width: 320px;
+ height: 50px;
+ padding-top: 3px;
+}
+.header__nav{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.header__nav--der img{
+ width: 110px;
+ margin-left: 15px;
+ margin-top: 5px;
+}
+.header__nav--izq{
+display: flex;
+}
+.header__nav--izq img{
+    width: 30px;
+    margin: 6px;
+}
+.rotate{
+    transform: rotate(90deg);
+ }
+/*HEADER NAV*/
+
+
+/*PUBLISHER DOS*/
+/*TITULO Y PROMOCION*/
+.publisher{
+    background: var(--fondo-masvistos-footer);  
+    width: 100%;
+}
+.publisher__dos{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    min-width: 288px;
+    max-width: 900px;
+    text-align: center;
+    align-self: center; 
+}
+.publisher__dos h1{
+    font-family: 'Raleway', sans-serif;
+    padding-top: 40px;
+    font-size: 4rem;
+    font-weight: bolder;
+    line-height: 6rem;
+    color: var(--just-white);
+}
+.publisher__dos p{
+    margin-top: 25px;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 4.4rem;
+    color: var(--iconnav-letters);
+}
+.publisher__dos a{
+    text-decoration: none;
+    color: var(--letter-carrito-blue); 
+}
+/*TITULO Y PROMOCION*/
+/*BOTON*/
+.publisher__dos--button{
+    width: 100%;
+    height: 70px;
+    position: relative;
+}
+.publisher__dos--button .select{
+    margin-top: 15px;
+    padding-left: 10px;
+    width: 70%;
+    text-align: start;
+    letter-spacing: .2px;
+    appearance: none;
+    background-image: url('./assets/icons/chevron-down_grey.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - .5rem);
+    background-size: 3.5rem;
+    outline: none;   
+} 
+.publisher__dos--button img{
+    position: absolute;
+    width: 30px;
+    left: 205px;
+    bottom: 24px;
+}
+/*BOTON*/
+/*BANCOS*/
+
+.publisher__dos--bancos img{
+    width: 100px;
+}
+/*BANCOS*/
+/*PUBLISHER DOS*/
+/*BOTON PRECIOS*/
+
+.main__sectionuno{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.main__sectionuno--button1{
+    display: flex;
+    align-items: center;
+    width: 300px;    
+    height: 40px;
+    position: relative;
+}
+.main__sectionuno--button1 img{
+    width: 35px;
+    margin-left: 10px;  
+}
+.main__sectionuno--button1 a span{
+    width: 13rem;
+    height: 2rem;
+    position: absolute;
+    order:1;
+    top: 16px;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    background-image: url('./assets/icons/down-arrow.svg');
+}
+.main__sectionuno--buttons{
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;   
+}
+.main__sectionuno--buttons::-webkit-scrollbar{
+    display: none;
+}
+.main__sectionuno--button2{
+    position: relative;
+}
+.main__sectionuno--button2 img{
+    width: 18px;
+    position: absolute;
+    bottom: 29%;
+    left: 1.5rem;
+    order: 1;
+ 
+}
+.main__sectionuno--button2 option{
+   padding: 0;
+   margin: 0;
+}
+.select {
+    padding-right:  5rem; 
+    border-radius: 5px;
+    border: 1px solid rgb(239, 243, 245) ;
+    order: 0;
+    padding-left: 4.5rem;
+    height: 6.3rem;
+    letter-spacing: .2px;
+    font-weight: bold;
+    font-size: 2.1rem;
+    color: var(--iconnav-letters);
+    appearance: none;
+    background-image: url('./assets/icons/chevron-downblue.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - .5rem);
+    background-size: 3.5rem;
+    outline: none;
+}
+/*BOTON PRECIOS*/
+/*PRECIOS*/
+.precios{
+ width: 90%;
+ height: auto;
+ margin-right: auto;
+ margin-left: auto;
+ border: 1px solid rgba(122, 122, 122,.2);
+ border-radius: 5px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ background: var(--fondo-main);
+ padding-bottom: 15px;
+ border-top: 4px solid var(--carritos-amarillo);
+}
+.precios__p1{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 15px;
+} 
+.precios__p2{
+    font-size: 2rem;
+    color: var(--carritos-amarillo);
+    border: 1px solid var(--estrella-especialidad);
+    border-radius: 5px;
+    padding: 0 5px;
+    margin-bottom: 5px;
+}
+.precios__p3{
+    font-size: 7rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    color: var(--titulos);
+}
+.precios span{
+    font-size: 2.2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    color: var(--titulos);
+}
+.precios i{
+    font-size: 1.5rem;
+    color: var(--iconnav-letters);
+    font-weight: 500;   
+    margin: 5px;
+}
+
+.precios__botones{
+    margin: 25px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 38%;
+    width: 100%; 
+}
+
+.precios__botones span{
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: var(--titulos);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.precios__botones input{
+    margin-right: 2px;
+    margin-top: 1.5px;
+}
+.precios__botones span>p{
+    color: var(--iconnav-letters);
+    font-size: 1.7rem;
+    margin-top: 8px;
+    margin-right: -15px;
+}
+
+.precios__mensaje{
+    display: grid;
+    grid-template-columns: 14% 86%;
+    align-content: center;
+    background: var(--fondo-masvistos-footer);
+    padding: 15px 0px;
+    border-top: 1px solid rgba(122, 122, 122,.1);
+    border-bottom: 1px solid rgba(122, 122, 122,.1);
+    border-left: 3px solid var(--estrella-especialidad);
+}
+.precios__mensaje p{
+    font-size: 2rem;
+    margin: 5px 15px;
+    color: var(--iconnav-letters);
+    text-align: justify;
+    font-weight: bold;
+    
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+button{
+    color:var(--fondo-main);
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: var(--estrella-especialidad);
+    border-radius: 3px;
+    border: none;
+    width: 70%;
+    height: 45px;
+}
+.cupon{
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--letter-carrito-blue);
+}
+/*PRECIOS*/
+/*BENEFICIOS*/
+.beneficios{
+    width: 90%;
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+} 
+.beneficios p{  
+    display: flex;
+    align-items: center;
+    color: var(--iconnav-letters);
+    font-size: 2rem;
+    line-height:30px;
+} 
+.beneficios a{
+   text-decoration: none;
+   color: var(--letter-carrito-blue);
+   margin-left: 30px; 
+}
+.beneficios img{
+ width: 25px;
+ margin: 5px;
+}  
+/*BENEFICIOS*/
+/*MENSAJE FINAL*/
+.mfinal{
+    width: 100%;
+    height: 65px;
+    font-size: 2rem;
+    color: var(--iconnav-letters);
+    display: flex;
+    justify-content: center;
+   padding: 15px 0;
+}
+.mfinal p{
+    width: 90%;
+    text-align: center;
+}
+/*MENSAJE FINAL*/
+/*GRATIS*/
+.precios:nth-of-type(3){
+    border-top: 4px solid var(--taller-verde);
+}
+ 
+ .precios__mensaje:nth-of-type(1){
+    border-left: 3px solid var(--taller-verde);
+} 
+ button:nth-last-of-type(1){
+    color:var(--taller-verde);
+    font-size: 2.2rem;
+    font-weight: 700;
+    background: none;
+    border: 2px solid var(--taller-verde);;
+} 
+/*GRATIS*/
+/*PRECIOS ESTUDIANTES*/
+.precios:nth-of-type(4){
+    border-top: 4px solid var(--letter-carrito-blue);
+}
+
+.precios__mensaje:nth-of-type(2){
+    border-left: 3px solid var(--letter-carrito-blue);
+}
+.precios__botones:nth-of-type(1){
+    margin: 15px 0;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+}
+button:nth-of-type(1){
+    color:var(--letter-carrito-blue);
+    font-size: 2.2rem;
+    font-weight: 700;
+    background: none;
+    border: 2px solid var(--letter-carrito-blue);
+} */
+/*PRECIOS ESTUDIANTES*/

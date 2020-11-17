@@ -64,7 +64,7 @@ display: flex;
 /*PUBLISHER DOS*/
 /*TITULO Y PROMOCION*/
 main{
-    background: var(--fondo-masvistos-footer);  
+    background: var(--fondo-docente);  
     width: 100%;
     
 }
@@ -313,13 +313,178 @@ main{
 .regalos{
     width: 90%;
     margin-top: 15px;
-    margin-bottom: 15px;
+    padding-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
     background: var(--fondo-main);
     border-radius:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .regalos img{
     width: 150px;
 }
+.regalos h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.4rem;
+    color: var(--titulos);
+    font-weight: bold;
+}
+.regalos p{
+    font-size: 2rem;
+    color: var(--iconnav-letters);
+    text-align: center;
+    margin: 10px 0;
+}
+.regalos button{
+    color: var(--empresarial);
+    border: 1px solid var(--empresarial);
+    background: none;
+    width: auto;
+    height: 30px;
+    padding: 0 15px;
+}
 /*REGALOS*/
+/*BENEFICIOS PREMIUM*/
+.bene_premium{
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+} 
+.bene_premium h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.4rem;
+    color: var(--empresarial);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.bene_premium p{  
+    font-weight: bold;
+    color: var(--iconnav-letters);
+    font-size: 2rem;
+    margin-bottom: 10px;
+} 
+.bene_premium a{
+   text-decoration: none;
+   color: var(--letter-carrito-blue);
+}
+.bene_premium img{
+ width: 25px;
+ margin: -2px 5px 0px 10px;
+ object-fit: contain;
+ float: left;
+}  
+/*BENEFICIOS PREMIUM*/
+/*PREGUNTAS FRECUENTES*/
+.preguntas h2{
+    font-size: 2.8rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: var(--empresarial);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.preguntas .preguntas__detallado img{
+    width: 20px;
+    float: left;
+    padding: 8px 0px 40px 0px;
+    margin: -3px 5px 0px 15px;
+    
+}
+.preguntas .preguntas__detallado h3{
+    font-size: 2.1rem;
+    font-weight: bold;
+    padding: 5px 20px 0 0px;
+    color: var(--titulos);
+    text-align: justify;
+}
+.preguntas .preguntas__detallado p{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 40px;
+    padding-right: 25px;
+    color: var(--iconnav-letters);
+    text-align: justify;
+    padding-bottom: 20px;
+    padding-top: 1rem;
+}
+.preguntas .preguntas__detallado a{
+    text-decoration: none;
+    color: var(--letter-carrito-blue);
+}
+.preguntas p{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--iconnav-letters);
+    padding-bottom: 20px;
+    padding-top: 1rem;
+}
+.preguntas a{
+    text-decoration: none;
+    color: var(--letter-carrito-blue);
+}
+/*PREGUNTAS FRECUENTES*/
+/*FOOTER*/
+footer{
+    width: 100%;
+    height: calc(100% - 50px);
+    background: var(--fondo-masvistos-footer);
+    padding: 10px;
+    }
+    .equipo{
+    width: 100%;
+    height: auto;
+    }
+    .equipo__container{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .equipo__container h2{
+        font-size: 2rem;
+        letter-spacing: 0.08rem;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .equipo__container--logo{
+        display: grid;
+        grid-template-columns: 10% 85%;
+    }
+    .equipo__container--logo img{
+     width: 20px;
+    }
+    
+    .equipo__container--paises p{ 
+     font-size: 1.5rem;
+     padding-bottom: 2px;
+     border-left: 2px solid var(--iconnav-letters);
+     padding-left: 15px;
+     color: var(--iconnav-letters);
+    }
+    .rrss{
+        width: 100%;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .rrss img{
+        width:20px;
+        object-fit: contain;/*para mantener proporcion*/
+        margin: 0 10px;
+    }
+    .equipo__container--paises a{
+        font-size: 1.5rem;
+        display: block;
+        padding-bottom: 2px;
+        text-decoration: none;
+        border-left: 2px solid var(--iconnav-letters);
+        padding-left: 15px;
+        color: var(--iconnav-letters);
+    }
+/*FOOTER*/

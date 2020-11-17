@@ -472,4 +472,139 @@ button{
     font-weight: bolder;
 }
 /*SOLO CURSOS*/
+/*NUEVOS CURSOS SCROLL*/
+.nuevos_cursos{
+    width: 100%;
+    background-color: var(--fondo-docente);
+    padding-top: 2px;
+}
+.nuevos_cursos p{
+    font-size: 2.4rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin: 10px;
+}
 
+.nuevos_cursos__nav{
+    overflow: scroll;
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+} 
+.nuevos_cursos__nav::-webkit-scrollbar{
+    display: none;
+}
+.nuevos_cursos__nav img{
+    width: 150px;
+    border-radius: 10px;
+    margin: 0px 8px;
+}
+/*NUEVOS CURSOS SCROLL*/
+/*BOTON MIRA NUESTROS CURSOS*/
+.boton_dos{
+    display: flex;
+    justify-content: center;
+}
+.boton_dos button{
+    margin-top: 10px;
+    color:var(--fondo-main);
+    background: var(--letter-carrito-blue);
+}
+/*BOTON MIRA NUESTROS CURSOS*/
+/*NUESTRO OBJETIVO*/
+.objetivo{
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding: 20px 0px;
+}
+/*NUESTRO OBJETIVO*/
+/*MAS HISTORIAS DE ALUMNOS*/
+.historias{
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    background: var(--fondo-main);
+    border-top: 1px solid #eff3f5;
+    border-bottom: 1px solid #eff3f5;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+ }
+
+ .historias img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+ .historias h2{
+     padding: 10px 5px;
+     font-weight: 700;
+     color: var(--titulos);
+     text-align: center;
+ }
+ 
+ .historias__contenido{
+     padding: 0px 10px 15px;
+     text-align: justify;
+     color: var(--iconnav-letters);
+ }
+ .historias__contenido span{
+     color: var(--letter-carrito-blue);
+ }
+
+/*MAS HISTORIAS DE ALUMNOS*/
+/*PREGUNTAS FRECUENTES*/
+.preguntas h2{
+    font-size: 2.8rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: var(--empresarial);
+    margin-bottom: 5px;
+}
+.preguntas .preguntas__detallado img{
+    width: 20px;
+    float: left;
+    padding: 8px 0px 40px 0px;
+    margin: -3px 5px 0px 15px;
+    
+}
+.preguntas .preguntas__detallado h3{
+    font-size: 2.1rem;
+    font-weight: bold;
+    padding: 5px 20px 0 0px;
+    color: var(--titulos);
+    text-align: justify;
+}
+.preguntas .preguntas__detallado p{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 40px;
+    padding-right: 25px;
+    color: var(--iconnav-letters);
+    text-align: justify;
+    padding-bottom: 20px;
+    padding-top: 1rem;
+}
+.preguntas .preguntas__detallado a{
+    text-decoration: none;
+    color: var(--letter-carrito-blue);
+}
+.preguntas p{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--iconnav-letters);
+    padding-bottom: 20px;
+    padding-top: 1rem;
+}
+.preguntas a{
+    text-decoration: none;
+    color: var(--letter-carrito-blue);
+}
+/*PREGUNTAS FRECUENTES*/

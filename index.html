@@ -16,7 +16,7 @@
             <div class="header__nav--izq">
                 <img src="./assets/icons/search_grey.svg" alt="search">
                 <img src="./assets/icons/cart_grey.svg" alt="basket">
-                <img src="./assets/icons/user_grey.svg" alt="user">
+                <img id="usuario" src="./assets/icons/user_grey.svg" alt="user">
                 <img id="burguer" class="rotate" src="./assets/icons/vertical_grey.svg" alt="hamburger">
             </div>
         </section>
@@ -70,7 +70,33 @@
                 <img class="icon" src="./assets/icons/lista_grey.png" alt="globo">  
                 <a href="#r">Artículos</a>
             </div>            
-         </section>
+        </section>
+        <section class="inicio">
+            <div class="inicioSesion">
+            <h2>Iniciar sesión con: </h2>
+            <div class="inicioSesion__logos">
+                <a href="" alt="google">
+                    <img src="./assets/icons/logogoogle64.png" alt="">
+                </a>
+                    <a href="" alt="google">
+                        <img src="./assets/icons/logogithub64.png" alt="">
+                </a>
+                <a href="" alt="google">
+                        <img src="./assets/icons/logotwitter64.png" alt="">
+                </a>
+            </div>
+            <h2>O utiliza tu correo </h2>
+            <div class="boton_dos">
+                <input type="text" placeholder="Correo electrónico">
+                <input type="text" placeholder="Contraseña">
+                <button>Iniciar sesión</button>
+            </div>
+            <p>¿No tienes una cuenta?
+                <br><a href="">Registrate gratis</a>
+                <br><a href="">¿Olvidaste tu contraseña?</a>
+            </p>
+            </div>
+        </section>
     </header>
     <main>
         <section class="main__masvistos">
@@ -293,6 +319,20 @@
             }
         }
     </script>
+    <script>
+        const inicio = document.querySelector('.inicio');
+        const usuarioButton = document.querySelector('#usuario');
+        usuarioButton.addEventListener('click',hideShow);
+        function hideShow(){
+            if (inicio.classList.contains('is-active')){
+                inicio.classList.remove('is-active');
+            }
+            else{
+                inicio.classList.add('is-active');
+            }
+        }
+    </script>
+    
 <script>
     const chevron = document.querySelector('.chevron');
     const menu = document.querySelector('label');

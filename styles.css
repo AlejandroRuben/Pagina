@@ -87,7 +87,6 @@ display: flex;
 .menu li{ 
    line-height:4rem;
    width: 300px;
-   
 }
 .menu label{
    font-size: 2.4rem;
@@ -101,8 +100,7 @@ display: flex;
    border-bottom: 1px solid var(--fondo-masvistos-footer);
    border-top: 1px solid  var(--fondo-masvistos-footer);
    background: var(--fondo-sectiondos);
-   color: var(--titulos);
-   
+   color: var(--titulos);  
 }
 .icon{
    width: 5rem;
@@ -166,6 +164,94 @@ display: flex;
     font-family: 'Raleway', sans-serif;
 }
 /*MENU DESPLEGABLE*/
+/*INICO SESION*/
+
+
+.inicio{
+    position: fixed;
+    display: flex;
+    z-index: 3;
+    top: 50px;
+    bottom: 0;
+    right: -100vw;
+    flex-direction: column;
+    padding: 15px;
+    width: 100%;
+    background: rgba(8, 7, 7, 0.5);  
+}
+ .inicioSesion{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 15px;
+    width: 100%;
+    background: rgba(247, 247, 247); 
+    border: 1px solid rgb(239, 243, 245);
+} 
+.inicio.is-active{
+    right: 0px;
+}
+.inicioSesion h2{
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--titulos);
+}
+.inicioSesion__logos{
+    text-align: center;
+}
+
+.inicioSesion img{
+    width: 25px;
+    margin: 15px;
+    align-content: center;
+    /*cursor: pointer;*/
+}
+.inicioSesion p{
+    font-size: 2.2rem;
+    text-align: center;
+    font-weight: bold;
+    line-height: 4rem;
+}
+.inicioSesion p a{
+    text-decoration: none;
+    color: var(--letter-carrito-blue);
+    /*cursor: pointer;*/
+    
+}
+
+
+.boton_dos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boton_dos input{
+    width: 90%;
+    height: 5rem;
+    margin: 10px 0 5px 0;
+    border-radius: 5px;
+    border: 1px solid rgb(239, 243, 245);
+    outline-style: none;
+    padding-left: 15px;
+}
+.boton_dos input::placeholder{
+    color: var(--iconnav-letters);
+}
+
+button{
+    color:var(--fondo-main);
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: var(--letter-carrito-blue);
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    height: 40px;
+    margin: 10px 0;
+}
+/*INICIO SESION*/
 
 .main__masvistos{
     width: 100%;

@@ -1,0 +1,149 @@
+:root{
+    /*COLORES*/
+ --iconnav-letters:#697477;
+ --fondo-masvistos-footer:#eff3f5;
+ --titulos: #2a3b47;
+ --fondo-sectiondos:#fcfcfc;
+ --fondo-main:#fbfbfe;
+ --letter-carrito-blue:#1192ee;
+ --fondo-lanzamiento:#e7f4fd;
+ --fondo-docente:rgb(247, 247, 247);
+ --carritos-amarillo:#ffbc4c;
+ --estrella-especialidad:#ffba42;
+ --fondo-rojo:#fdeded;
+ --curso-gratis:#eb5656;
+ --taller-verde:#2dd280;
+ --fondo-taller:#eafbf2;
+ --fondo-especialidad:#fff8eb;
+ --preguntas:#007bdf;
+ --color-rrss:#515151;
+ --empresarial: #094977;
+
+}
+*{ 
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 41.68%;
+    font-family: 'Open Sans', sans-serif;
+}
+/*HEADER NAV*/
+header{
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ min-width: 320px;
+ height: 50px;
+ padding-top: 3px;
+}
+.header__nav{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.header__nav--der img{
+ width: 110px;
+ margin-left: 15px;
+ margin-top: 5px;
+}
+.header__nav--izq{
+display: flex;
+}
+.header__nav--izq img{
+    width: 30px;
+    margin: 6px;
+}
+.rotate{
+    transform: rotate(90deg);
+ }
+/*HEADER NAV*/
+.principal{
+    background: var(--titulos);
+    width: 100%;
+    padding: 15px 0px 0px 0px;
+}
+.principal h1{
+    font-size: 3.4rem;
+    color: var(--fondo-sectiondos);
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    margin-left: 6px;
+}
+.compras{
+    width: 92%;
+    background: var(--titulos);
+    border: 1px solid #050505 ;
+    padding:25px 0 0 0px;
+    text-align: center;
+    margin-left: 10px;
+}
+.compras img{
+    width: 85%;
+    border: 1px solid #050505 ;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.compras__costo{
+    display: grid;
+    grid-template-columns: 68% 32%;
+}
+.compras__der{
+    padding-left: 22px;
+    text-align: left;
+}
+
+.compras h2{
+    font-size: 2rem ;
+    color: var(--fondo-sectiondos);
+}
+.compras p{
+    font-size: 2rem ;
+    color: var(--iconnav-letters);
+    margin: 10px 0;
+}
+.compras__izq{
+    text-align: left;
+}
+.compras__carrito{
+    height: 50px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    background: var(--empresarial);
+    border: 1px solid  #050505 ;
+    margin-top: 10px;
+}
+.compras__carrito h2{
+    font-size: 2rem;
+}
+.compras__carrito p{
+    font-size: 2rem;
+    margin-right: 20px;
+  
+}
+.compras__carrito img{
+    width: 20px;
+    border: none;
+    float: left;
+    margin-right: 10px;
+    margin-bottom:0;
+}
+
+
+/*BOTON MIRA NUESTROS CURSOS*/
+.boton_dos{
+    display: flex;
+    justify-content: center;
+}
+.boton_dos button{
+    margin-top: 10px;
+    color:var(--fondo-main);
+    background: var(--letter-carrito-blue);
+}
+/*BOTON MIRA NUESTROS CURSOS*/
